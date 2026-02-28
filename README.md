@@ -15,7 +15,6 @@ This repository serves two purposes:
 - Works on GitHub user pages and project pages
 - Plain multi-page structure with shared styling
 - Includes a matching `404.html`
-- Includes a GitHub Actions workflow for Pages deployment
 - Keeps template usage and OSS contribution workflows separate
 
 ## Use this template for your own site
@@ -27,10 +26,9 @@ Use `Use this template`, not `Fork`, when your goal is to launch your own homepa
 3. If you want a user site, name the repository `<your-github-username>.github.io`
 4. Edit `index.html`, `writing.html`, `misc.html`, and `styles.css`
 5. Open `Settings` -> `Pages`
-6. Set `Build and deployment` -> `Source` to `GitHub Actions`
-7. Push to `main`
-
-The included workflow deploys the site automatically.
+6. Set `Build and deployment` -> `Source` to `Deploy from a branch`
+7. Select branch `main` and folder `/ (root)`
+8. Push to `main`
 
 ## Contribute to this template
 
@@ -49,8 +47,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for the expected workflow.
 
 ```text
 .
-├── .github/
-│   └── workflows/deploy.yml
 ├── .nojekyll
 ├── 404.html
 ├── CONTRIBUTING.md
@@ -88,9 +84,9 @@ Then open `http://localhost:8000`.
 
 1. Create a new repository with `Use this template`
 2. Open `Settings` -> `Pages`
-3. Set `Build and deployment` -> `Source` to `GitHub Actions`
-4. Push to `main`
-5. The included workflow deploys the site automatically
+3. Set `Build and deployment` -> `Source` to `Deploy from a branch`
+4. Select branch `main` and folder `/ (root)`
+5. Push to `main`
 
 ## Optional custom domain
 

@@ -1,4 +1,4 @@
-# Brutalist Pages Template
+# Minimal Pages Template
 
 A simple personal website template for GitHub Pages.
 

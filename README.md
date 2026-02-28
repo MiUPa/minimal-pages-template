@@ -14,7 +14,9 @@ This repository serves two purposes:
 - No framework, no build step, no dependency install
 - Works on GitHub user pages and project pages
 - Plain multi-page structure with shared styling
+- Fixed dark theme across the entire site
 - Includes a matching `404.html`
+- Includes sample article pages under `writing/`
 - Keeps template usage and OSS contribution workflows separate
 
 ## Use this template for your own site
@@ -54,15 +56,19 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for the expected workflow.
 ├── LICENSE
 ├── misc.html
 ├── styles.css
+├── writing/
+│   ├── designing-quieter-software.html
+│   ├── release-notes-without-theater.html
+│   └── what-i-keep-on-the-desk.html
 ├── writing.html
 └── README.md
 ```
 
 ## Customize it
 
-1. Edit `index.html`, `writing.html`, and `misc.html`
+1. Edit `index.html`, `writing.html`, `misc.html`, and the files under `writing/`
 2. Replace `Your Name`, the sample copy, and the contact links
-3. Adjust spacing and typography in `styles.css`
+3. Adjust spacing, typography, and colors in `styles.css`
 4. Add more pages if you want, but keep links relative so the template works on project pages too
 
 ## Preview locally

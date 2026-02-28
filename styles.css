@@ -1,0 +1,167 @@
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+  --border: #dddddd;
+  font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  text-underline-offset: 0.12em;
+}
+
+a:hover {
+  color: var(--muted);
+}
+
+.site-shell {
+  width: min(42rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.25rem 0 3rem;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.site-header {
+  margin-bottom: 3rem;
+}
+
+.site-title,
+.site-nav,
+.site-footer,
+.entry-list,
+.misc-list {
+  font-size: 1rem;
+}
+
+.site-title {
+  font-weight: 700;
+}
+
+.site-nav,
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+}
+
+.site-nav a[aria-current="page"] {
+  text-decoration: none;
+}
+
+.page-content {
+  min-height: 60vh;
+}
+
+.prose h1,
+.list-page h1 {
+  margin: 0 0 1rem;
+  font-size: 2.25rem;
+  line-height: 1.15;
+}
+
+.prose p,
+.list-page p {
+  margin: 0 0 1rem;
+}
+
+.page-intro {
+  color: var(--muted);
+}
+
+.entry-list,
+.misc-list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry-list li,
+.misc-list li {
+  margin: 0 0 1.5rem;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry-list li:last-child,
+.misc-list li:last-child {
+  margin-bottom: 0;
+}
+
+.entry-date,
+.misc-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--muted);
+}
+
+.entry-title,
+.misc-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.entry-list p,
+.misc-list p {
+  margin: 0.35rem 0 0;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: inherit;
+}
+
+@media (max-width: 640px) {
+  :root {
+    font-size: 17px;
+  }
+
+  .site-shell {
+    width: calc(100% - 1.5rem);
+    padding-top: 1rem;
+  }
+
+  .site-header {
+    margin-bottom: 2.25rem;
+  }
+
+  .prose h1,
+  .list-page h1 {
+    font-size: 1.95rem;
+  }
+}
